@@ -206,7 +206,7 @@ public sealed class FloatingWindow : IDisposable
         try
         {
             var filePath = Path.Combine(_pluginInterface.DalamudAssetDirectory.FullName, "UIRes",
-                "NotoSansCJKjp-Medium.otf");
+                "NotoSansCJKsc-Medium.otf");
             if (!File.Exists(filePath)) throw new FileNotFoundException("Font file not found!");
             var grBuilder =
                 new ImFontGlyphRangesBuilderPtr(ImGuiNative.ImFontGlyphRangesBuilder_ImFontGlyphRangesBuilder());
